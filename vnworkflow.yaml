@@ -8,7 +8,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: azure/login@v1
       with:
-        creds: ${{ secrets.ANIL_SECRET_CRED }}
+     creds: ${{ secrets.ANIL_SECRET_CRED }}
     - uses: azure/arm-deploy@v1
       with:
         resourceGroupName: nestrg
